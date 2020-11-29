@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-form {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-form input {
+    background-color: white;
+    padding: 18px 25px;
+    border: none;
+    margin-top: 45px;
+    width: 50%;
+    margin-bottom: 5px;
+    transform: rotateX(28deg);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    background-color: white;
+    margin-bottom: -2px;
+    padding: 18px 25px;
+    perspective: 1000px;
+    color: gray;
+}
+
+.suggestions {
+    display: block;
+    width: 46%;
+}
+
+.suggestions li:nth-child(odd) {
+    transform: rotateX(36deg);
+}
+
+.population {
+    font-size: 10px;
+    float: right;
+    text-align: right;
+}
+
+.hl {
+    background-color: yellow;
+}
